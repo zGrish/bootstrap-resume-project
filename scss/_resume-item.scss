@@ -1,0 +1,54 @@
+section.resume-section {
+  border-bottom: 1px solid $gray-300;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  .resume-item {
+    .resume-content {}
+    .resume-date {
+      min-width: none;
+    }
+  }
+}
+
+.badge-interest {
+  background-color: var(--espresso); /* or var(--ember) depending on preference */
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: default;
+  transition: background-color 0.3s ease;
+}
+
+.badge-interest:hover {
+  background-color: var(--ember);
+}
+
+.interest-description {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ember);
+  font-size: 1.1rem;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-top: 1rem;
+  border-left: 4px solid var(--gold);
+  padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+    .resume-item {
+      .resume-content {}
+      .resume-date {
+        min-width: 18rem;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
